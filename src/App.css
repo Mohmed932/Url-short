@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(to left, rgb(58, 8, 122), rgba(0, 0, 0, 0.959));
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.App-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40vh;
+  width: 35%;
+  height: 5%;
+}
+.App-Content input {
+  text-indent: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  caret-color: blueviolet;
+  width: 80%;
+  height: 100%;
+  font-size: 20px;
+  outline: none;
+}
+.App-Content button {
+  background: linear-gradient(to right, rgb(58, 8, 122), rgba(0, 0, 0, 0.959));
+  color: #fff;
+  padding: 9px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.result {
+  margin-top: 10vh;
+}
+.alert {
+  position: relative;
+  top: -350px;
+  width: 30%;
+}
+@media (max-width: 1100px) {
+  .App-Content {
+    width: 55%;
+  }
+  .status {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .App-Content {
+    width: 75%;
+  }
+  .status {
+    width: 65%;
+  }
+}
+@media (max-width: 480px) {
+  .App-Content {
+    width: 85%;
+  }
+  .status {
+    width: 85%;
+  }
+}
